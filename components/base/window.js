@@ -294,7 +294,6 @@ export class WindowMainScreen extends Component {
         }
     }
     componentDidMount() {
-        console.log("here", this.props.screen);
         setTimeout(() => {
             this.setState({ setDarkBg: true });
         }, 3000);

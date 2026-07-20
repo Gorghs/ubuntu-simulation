@@ -38,7 +38,7 @@ function DesktopMenu(props) {
             }
         }
         catch (e) {
-            console.log(e)
+            // fullscreen request denied
         }
     }
 

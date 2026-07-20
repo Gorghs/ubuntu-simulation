@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head';
 
 export default function Meta() {
@@ -9,10 +8,10 @@ export default function Meta() {
             <meta charSet="utf-8" />
             <meta name="title" content="Karthick V Portfolio | Ubuntu Simulation | Minecraft Styled Portfolio" />
             <meta name="description"
-                content="Welcome to the official Karthick V Portfolio. Experience a fully interactive Ubuntu simulation and Minecraft styled portfolio showcasing backend engineering, Python systems, and agentic AI workflows." />
-            <meta name="author" content="Karthick V (Gorghs)" />
+                content="Karthick's portfolio - an interactive Ubuntu desktop simulation built with Next.js. Features a functional terminal, applications, and showcase of backend engineering, Python development, and agentic AI work." />
+            <meta name="author" content="Karthick" />
             <meta name="keywords"
-                content="karthick v portfolio, ubuntu simulation, minecraft styled portfolio, ubutu simulation, karthick's portfolio, gorghs, karthick venkatachalem, karthick.venkatachalem@gmail.com, Python developer, backend engineer, agentic AI, LLM workflows, software engineer portfolio, Next.js portfolio" />
+                content="ubuntu simulation, interactive ubuntu desktop, minecraft styled portfolio, web-based ubuntu emulator, linux simulation, developer portfolio, python backend engineer, agentic AI systems, LLM workflows, interactive OS simulation, Karthick portfolio, gorghs, software engineer, fullstack developer, Next.js portfolio, react developer" />
             <meta name="robots" content="index, follow" />
             <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
             <meta name="language" content="English" />
@@ -26,14 +25,14 @@ export default function Meta() {
             {/* Schema.org for Google */}
             <meta itemProp="name" content="Karthick V Portfolio | Ubuntu Simulation | Minecraft Styled Portfolio" />
             <meta itemProp="description"
-                content="Welcome to the official Karthick V Portfolio. Experience a fully interactive Ubuntu simulation and Minecraft styled portfolio showcasing backend engineering, Python systems, and agentic AI workflows." />
+                content="Karthick's portfolio - an interactive Ubuntu desktop simulation built with Next.js. Features a functional terminal, applications, and showcase of backend engineering, Python development, and agentic AI work." />
             <meta itemProp="image" content="https://gorghs.github.io/images/logos/fevicon.png" />
             
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Karthick V Portfolio | Ubuntu Simulation | Minecraft Styled Portfolio" />
             <meta name="twitter:description"
-                content="Welcome to the official Karthick V Portfolio. Experience a fully interactive Ubuntu simulation and Minecraft styled portfolio showcasing backend engineering, Python systems, and agentic AI workflows." />
+                content="Karthick's portfolio - an interactive Ubuntu desktop simulation built with Next.js. Features a functional terminal, applications, and showcase of backend engineering, Python development, and agentic AI work." />
             <meta name="twitter:site" content="@Gorghs" />
             <meta name="twitter:creator" content="@Gorghs" />
             <meta name="twitter:image:src" content="https://gorghs.github.io/images/logos/logo_1024.png" />
@@ -41,7 +40,7 @@ export default function Meta() {
             {/* Open Graph general (Facebook, Pinterest & Google+) */}
             <meta name="og:title" content="Karthick V Portfolio | Ubuntu Simulation | Minecraft Styled Portfolio" />
             <meta name="og:description"
-                content="Welcome to the official Karthick V Portfolio. Experience a fully interactive Ubuntu simulation and Minecraft styled portfolio showcasing backend engineering, Python systems, and agentic AI workflows." />
+                content="Karthick's portfolio - an interactive Ubuntu desktop simulation built with Next.js. Features a functional terminal, applications, and showcase of backend engineering, Python development, and agentic AI work." />
             <meta name="og:image" content="https://gorghs.github.io/images/logos/logo_1200.png" />
             <meta name="og:url" content="https://gorghs.github.io/" />
             <meta name="og:site_name" content="Karthick V Portfolio | Ubuntu Simulation & Minecraft Styled Portfolio" />
@@ -57,7 +56,7 @@ export default function Meta() {
                         "@type": "ProfilePage",
                         "name": "Karthick V's Portfolio",
                         "url": "https://gorghs.github.io/",
-                        "description": "Welcome to the official Karthick V Portfolio. Experience a fully interactive Ubuntu simulation and Minecraft styled portfolio showcasing backend engineering, Python systems, and agentic AI workflows.",
+                        "description": "Karthick's portfolio - an interactive Ubuntu desktop simulation built with Next.js. Features a functional terminal, applications, and showcase of backend engineering, Python development, and agentic AI work.",
                         "about": {
                             "@type": "Person",
                             "name": "Karthick V",

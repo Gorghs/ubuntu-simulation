@@ -319,7 +319,7 @@ export class Terminal extends Component {
                     category: "Sudo Access",
                     action: "lol",
                 });
-                result = "<img class=' w-2/5' src='./images/memes/used-sudo-command.webp' />";
+                result = "<img class=' w-2/5' src='./images/memes/used-sudo-command.webp' alt='Sudo access meme' />";
                 break;
             default:
                 result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: " + availableCommands;

@@ -2,7 +2,7 @@
   "name": "gorghs-portfolio",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://gorghs.github.io/",
+  "homepage": "https://github.com/gorghs/ubuntu-simulation",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

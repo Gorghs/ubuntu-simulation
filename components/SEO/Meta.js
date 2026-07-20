@@ -70,7 +70,7 @@ export default function Meta() {
                                 "Backend Development"
                             ],
                             "sameAs": [
-                                "https://github.com/Gorghs",
+                                "https://github.com/gorghs/ubuntu-simulation",
                                 "https://www.linkedin.com/in/karthickv4"
                             ]
                         }

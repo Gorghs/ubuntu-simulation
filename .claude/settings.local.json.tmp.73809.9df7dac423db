@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit -m 'fix: add alt text to dynamically generated image in terminal *)",
+      "Bash(npm run *)",
+      "Bash(npx browserslist@latest --update-db -y)",
+      "Bash(awk '{print $9, $5}')",
+      "Bash(rm -f ./.claude/settings.local.json.tmp.73809.7faf48c5c6f4)",
+      "Bash(git commit *)"
+    ]
+  }
+}

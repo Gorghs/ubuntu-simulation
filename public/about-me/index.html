@@ -5,451 +5,866 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     
-    <!-- Senior-Level SEO Optimizations -->
-    <title>Karthick V Portfolio | Ubuntu Simulation &amp; Minecraft Styled Developer Resume</title>
-    <meta name="description" content="Professional resume of Karthick V (Gorghs). Experience a custom Minecraft styled portfolio and Ubuntu simulation showcasing backend development and agentic AI engineering." />
+    <!-- SEO Optimizations -->
+    <title>Karthick V — Software Development Engineer</title>
+    <meta name="description" content="Portfolio of Karthick V (Gorghs), Software Development Engineer. Projects in Python backend, automation, agentic AI systems, and browser extensions." />
     <meta name="author" content="Karthick V (Gorghs)" />
-    <meta name="keywords" content="karthick v portfolio, ubuntu simulation, minecraft styled portfolio, ubutu simulation, Karthick V resume, Gorghs resume, software engineer resume, Python backend developer, agentic AI engineer, Next.js, Nes.css developer, developer resume" />
+    <meta name="keywords" content="Karthick V portfolio, software development engineer, Python backend, agentic AI, automation, browser extensions" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://gorghs.github.io/about-me/" />
+    <link rel="canonical" href="https://karthickv.dev/about-me/" />
 
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Karthick V Portfolio | Ubuntu Simulation &amp; Minecraft Styled Developer Resume" />
-    <meta property="og:description" content="Professional resume of Karthick V (Gorghs). Experience a custom Minecraft styled portfolio and Ubuntu simulation showcasing backend development and agentic AI engineering." />
-    <meta property="og:image" content="https://gorghs.github.io/images/logos/logo_1200.png" />
-    <meta property="og:url" content="https://gorghs.github.io/about-me/" />
+    <meta property="og:title" content="Karthick V — Software Development Engineer" />
+    <meta property="og:description" content="Portfolio of Karthick V (Gorghs), Software Development Engineer. Projects in Python backend, automation, agentic AI systems, and browser extensions." />
+    <meta property="og:image" content="https://karthickv.dev/images/logos/logo_1200.png" />
+    <meta property="og:url" content="https://karthickv.dev/about-me/" />
     <meta property="og:type" content="profile" />
     <meta property="og:locale" content="en_IN" />
 
-    <!-- Twitter Card Metadata -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Karthick V Portfolio | Ubuntu Simulation &amp; Minecraft Styled Developer Resume" />
-    <meta name="twitter:description" content="Professional resume of Karthick V (Gorghs). Experience a custom Minecraft styled portfolio and Ubuntu simulation showcasing backend development and agentic AI engineering." />
-    <meta name="twitter:image" content="https://gorghs.github.io/images/logos/logo_1024.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-    <!-- JSON-LD Structured Data Schema (ProfilePage / Person) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        "name": "Karthick V's Resume",
-        "url": "https://gorghs.github.io/about-me/",
-        "description": "Professional resume of Karthick V (Gorghs). Experience a custom Minecraft styled portfolio and Ubuntu simulation showcasing backend development and agentic AI engineering.",
-        "about": {
-          "@type": "Person",
-          "name": "Karthick V",
-          "alternateName": "Gorghs",
-          "jobTitle": "Software Development Engineer",
-          "email": "karthick.venkatachalem@gmail.com",
-          "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Saveetha Engineering College"
-          },
-          "knowsAbout": [
-            "Python", "Java", "JavaScript", "C", "Node.js", 
-            "Express.js", "Flask", "FastAPI", "PostgreSQL", 
-            "Supabase", "Git", "Docker", "Agentic AI Systems", 
-            "Backend Development"
-          ],
-          "sameAs": [
-            "https://github.com/Gorghs",
-            "https://www.linkedin.com/in/karthickv4"
-          ]
-        }
-      }
-    </script>
-    <link
-      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-      type="text/css"
-    />
     <style>
-      body {
-        padding-bottom: 50px;
-      }
-      .nes-progress {
-        height: 20px;
+      :root {
+        --notion-bg: #ffffff;
+        --notion-text: #37352f;
+        --notion-text-light: #787774;
+        --notion-text-lighter: #9b9a97;
+        --notion-border: #e9e9e8;
+        --notion-border-dark: #d3d3d2;
+        --notion-hover: #f1f1f0;
+        --notion-callout-bg: #f7f6f3;
+        --notion-tag-gray: #e3e2e0;
+        --notion-tag-brown: #eee0da;
+        --notion-tag-orange: #fadec9;
+        --notion-tag-yellow: #fdecc8;
+        --notion-tag-green: #dbeddb;
+        --notion-tag-blue: #d3e5ef;
+        --notion-tag-purple: #e8deee;
+        --notion-tag-pink: #f5e0e9;
+        --notion-tag-red: #ffe2dd;
       }
 
-      .github-link {
-        position: fixed;
-        bottom: 40px;
-        right: 5px;
-        z-index: 999;
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif;
+        background-color: var(--notion-bg);
+        color: var(--notion-text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Top Breadcrumb Navigation Bar */
+      .notion-topbar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--notion-border);
+        height: 45px;
         display: flex;
-        height: 60px;
-        color: #333;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 18px;
+        font-size: 13px;
+      }
+
+      .notion-breadcrumbs {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--notion-text-light);
+      }
+      .notion-breadcrumbs a {
+        color: var(--notion-text-light);
         text-decoration: none;
-        transition: all 0.3 ease;
-        font-size: 50%;
+        padding: 3px 6px;
+        border-radius: 4px;
       }
-      .progress {
-        transition: width 2s ease;
+      .notion-breadcrumbs a:hover {
+        background-color: var(--notion-hover);
+        color: var(--notion-text);
       }
-      .responsive-email-link {
-        white-space: nowrap;
+      .notion-breadcrumbs .crumb-active {
+        color: var(--notion-text);
+        font-weight: 500;
       }
+
+      .notion-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .notion-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--notion-text);
+        background: transparent;
+        border: 1px solid var(--notion-border);
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.15s, border-color 0.15s;
+      }
+      .notion-btn:hover {
+        background-color: var(--notion-hover);
+        border-color: var(--notion-border-dark);
+      }
+      .notion-btn-primary {
+        background-color: #2383e2;
+        color: #ffffff;
+        border-color: #2383e2;
+      }
+      .notion-btn-primary:hover {
+        background-color: #1b6fc2;
+        color: #ffffff;
+      }
+
+      /* Cover Banner */
+      .notion-cover {
+        width: 100%;
+        height: 220px;
+        background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cover-pixel-pattern {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(#ffffff 15%, transparent 16%), radial-gradient(#e0f2fe 15%, transparent 16%);
+        background-size: 24px 24px;
+        background-position: 0 0, 12px 12px;
+        opacity: 0.6;
+      }
+
+      .cover-train-badge {
+        position: absolute;
+        bottom: 12px;
+        right: 16px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(4px);
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 500;
+        color: #0369a1;
+        border: 1px solid rgba(3, 105, 161, 0.2);
+      }
+
+      /* Page Body Layout */
+      .notion-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 48px 80px 48px;
+        position: relative;
+      }
+
+      /* Page Icon */
+      .notion-page-icon {
+        width: 78px;
+        height: 78px;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        border: 1px solid var(--notion-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 42px;
+        margin-top: -42px;
+        position: relative;
+        z-index: 10;
+      }
+
+      /* Page Title */
+      .notion-title {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin: 16px 0 18px 0;
+        color: var(--notion-text);
+      }
+
+      /* Properties Table (Notion database fields) */
+      .notion-properties {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 24px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--notion-border);
+      }
+
+      .property-row {
+        display: flex;
+        align-items: center;
+        font-size: 13.5px;
+      }
+
+      .property-name {
+        width: 140px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--notion-text-light);
+      }
+
+      .property-value {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+
+      /* Notion Tags / Pills */
+      .notion-tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.4;
+      }
+      .tag-blue { background-color: var(--notion-tag-blue); color: #1e40af; }
+      .tag-green { background-color: var(--notion-tag-green); color: #166534; }
+      .tag-purple { background-color: var(--notion-tag-purple); color: #6b21a8; }
+      .tag-orange { background-color: var(--notion-tag-orange); color: #9a3412; }
+      .tag-gray { background-color: var(--notion-tag-gray); color: #374151; }
+      .tag-yellow { background-color: var(--notion-tag-yellow); color: #854d0e; }
+
+      /* Callout Block */
+      .notion-callout {
+        background-color: var(--notion-callout-bg);
+        border: 1px solid var(--notion-border);
+        border-radius: 8px;
+        padding: 16px 20px;
+        display: flex;
+        gap: 14px;
+        margin: 20px 0;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .callout-icon {
+        font-size: 20px;
+        line-height: 1;
+        flex-shrink: 0;
+      }
+
+      /* Notion Section Headings */
+      .notion-h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 36px 0 14px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        letter-spacing: -0.01em;
+      }
+
+      .notion-h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 20px 0 8px 0;
+      }
+
+      /* Notion Embed Block for 3D Voxel Model */
+      .notion-embed-card {
+        border: 1px solid var(--notion-border);
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fbfbfa;
+        margin: 20px 0 32px 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      }
+
+      .embed-header {
+        background: #f7f6f3;
+        border-bottom: 1px solid var(--notion-border);
+        padding: 10px 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: var(--notion-text-light);
+      }
+
+      .embed-controls {
+        display: flex;
+        gap: 6px;
+      }
+
+      .embed-tab-btn {
+        background: transparent;
+        border: 1px solid var(--notion-border);
+        border-radius: 4px;
+        padding: 3px 8px;
+        font-size: 11px;
+        font-weight: 500;
+        cursor: pointer;
+        color: var(--notion-text-light);
+        transition: all 0.15s;
+      }
+      .embed-tab-btn:hover {
+        background: var(--notion-hover);
+        color: var(--notion-text);
+      }
+      .embed-tab-btn.active {
+        background: #ffffff;
+        color: #2383e2;
+        border-color: #2383e2;
+        font-weight: 600;
+      }
+
+      #notion-three-canvas {
+        width: 100%;
+        height: 280px;
+        cursor: grab;
+        background: radial-gradient(circle at center, #ffffff 0%, #f0f4f8 100%);
+      }
+      #notion-three-canvas:active {
+        cursor: grabbing;
+      }
+
+      .embed-footer {
+        padding: 6px 14px;
+        border-top: 1px solid var(--notion-border);
+        font-size: 11px;
+        color: var(--notion-text-lighter);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      /* Notion Database Gallery Cards (Projects) */
+      .notion-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 16px;
+        margin: 16px 0;
+      }
+
+      .gallery-card {
+        border: 1px solid var(--notion-border);
+        border-radius: 8px;
+        background: #ffffff;
+        padding: 16px;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .gallery-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        border-color: var(--notion-border-dark);
+      }
+
+      .card-header-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+      .card-icon {
+        font-size: 20px;
+      }
+      .card-title {
+        font-size: 14.5px;
+        font-weight: 600;
+        color: var(--notion-text);
+      }
+      .card-desc {
+        font-size: 12.5px;
+        color: var(--notion-text-light);
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+      .card-tags {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+      }
+
+      /* Notion Table Layout (Skills & Stats) */
+      .notion-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+        font-size: 13px;
+      }
+      .notion-table th, .notion-table td {
+        border: 1px solid var(--notion-border);
+        padding: 8px 12px;
+        text-align: left;
+      }
+      .notion-table th {
+        background-color: var(--notion-callout-bg);
+        font-weight: 500;
+        color: var(--notion-text-light);
+      }
+      .notion-table tr:hover td {
+        background-color: #fafaf9;
+      }
+
+      /* Notion Timeline / Experience List */
+      .notion-list-view {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 14px 0;
+      }
+
+      .notion-list-item {
+        border: 1px solid var(--notion-border);
+        border-radius: 6px;
+        padding: 14px 18px;
+        background: #ffffff;
+      }
+
+      .list-item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 6px;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .item-role {
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--notion-text);
+      }
+      .item-company {
+        color: var(--notion-text-light);
+        font-size: 13px;
+      }
+      .item-date {
+        font-size: 12px;
+        color: var(--notion-text-lighter);
+      }
+
+      .item-bullets {
+        margin: 6px 0 0 0;
+        padding-left: 18px;
+        font-size: 13px;
+        color: var(--notion-text-light);
+      }
+      .item-bullets li {
+        margin-bottom: 4px;
+      }
+
+      /* Toggle Accordion */
+      details.notion-toggle {
+        margin: 10px 0;
+        font-size: 13.5px;
+      }
+      details.notion-toggle summary {
+        cursor: pointer;
+        font-weight: 500;
+        color: var(--notion-text);
+        padding: 4px 0;
+      }
+      details.notion-toggle summary:hover {
+        color: #2383e2;
+      }
+      .toggle-content {
+        padding-left: 18px;
+        margin-top: 8px;
+        color: var(--notion-text-light);
+        font-size: 13px;
+      }
+
+      /* Footer */
+      .notion-footer {
+        margin-top: 60px;
+        padding-top: 20px;
+        border-top: 1px solid var(--notion-border);
+        font-size: 12px;
+        color: var(--notion-text-lighter);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
       @media (max-width: 768px) {
-        .github-link {
-          display: none !important;
+        .notion-container {
+          padding: 0 20px 60px 20px;
         }
-        .responsive-email-link {
-          white-space: normal !important;
-          word-break: break-all;
-          font-size: 70%;
+        .notion-title {
+          font-size: 28px;
         }
-        .nes-container {
-          padding: 1.2rem 1rem !important;
+        .property-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
         }
-        .title {
-          font-size: 80% !important;
-        }
-        body {
-          font-size: 90%;
+        .property-name {
+          width: 100%;
         }
       }
     </style>
   </head>
   <body>
-    <nav
-      style="padding: 20px; border-bottom: 5px solid #ccc; margin-bottom: 30px"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-xs-12">
-            <h2 style="margin-bottom: 0">Karthick V</h2>
-          </div>
-          <div class="col-md-5 col-xs-12">
-            <p style="margin-bottom: 0; text-align: left">
-              <a href="mailto:karthick.venkatachalem@gmail.com" target="_blank" class="responsive-email-link" style="display: inline-flex; align-items: center;">
-                <i class="nes-icon gmail" style="margin-right: 10px;"></i>
-                karthick.venkatachalem@gmail.com
-              </a>
-            </p>
-          </div>
-        </div>
+    <!-- Top Sticky Breadcrumb Bar -->
+    <nav class="notion-topbar">
+      <div class="notion-breadcrumbs">
+        <span>📂</span>
+        <a href="#">Workspace</a>
+        <span>/</span>
+        <a href="#">Engineers</a>
+        <span>/</span>
+        <span class="crumb-active">Karthick V</span>
       </div>
-      <a
-        href="https://github.com/Gorghs"
-        target="_blank"
-        rel="noopener"
-        class="github-link active"
-      >
-        <p
-          class="nes-balloon is-success from-right"
-          style="font-size: 90%; margin-bottom: 0px"
-        >
-          Fork this<br />on GitHub
-        </p>
-        <i class="nes-octocat animate" style="margin-top: 10px"></i>
-      </a>
+      <div class="notion-actions">
+        <a href="https://github.com/Gorghs" target="_blank" rel="noopener" class="notion-btn">
+          <span>🐙</span> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/karthickv4" target="_blank" rel="noopener" class="notion-btn">
+          <span>💼</span> LinkedIn
+        </a>
+        <a href="../files/karthick.pdf" download="Karthick_Resume.pdf" class="notion-btn notion-btn-primary">
+          <span>📄</span> Resume (PDF)
+        </a>
+      </div>
     </nav>
-    <div class="container" style="margin-bottom: 5px">
-      <div class="row middle-xs">
-        <div class="col-xs-8 col-sm-9 col-md-10">
-          <div class="nes-balloon from-right" style="width: 100%;">
-            <p style="font-size: 85%; margin-bottom: 0;">
-              Hi There, I am Karthick and here is my resume.<br />If you want to
-              hire me for Python Developer or Backend Engineering positions, please reach out.
+
+    <!-- Notion Cover Banner -->
+    <div class="notion-cover">
+      <div class="cover-pixel-pattern"></div>
+      <div class="cover-train-badge">
+        🚂 Interactive 3D Voxel Engine Attached
+      </div>
+    </div>
+
+    <!-- Main Notion Document Container -->
+    <main class="notion-container">
+      
+      <!-- Page Icon -->
+      <div class="notion-page-icon" title="Karthick V Avatar">
+        <img src="./images/karthick.png" alt="Karthick" style="width: 58px; height: 58px; image-rendering: pixelated;" />
+      </div>
+
+      <!-- Page Title -->
+      <h1 class="notion-title">Karthick V ✦ SDE &amp; AI Engineer</h1>
+
+      <!-- Page Metadata / Properties Table -->
+      <div class="notion-properties">
+        
+        <div class="property-row">
+          <div class="property-name"><span>🏷️</span> Status</div>
+          <div class="property-value">
+            <span class="notion-tag tag-green">🟢 Open to Software Engineering &amp; AI Roles</span>
+          </div>
+        </div>
+
+        <div class="property-row">
+          <div class="property-name"><span>💻</span> Primary Focus</div>
+          <div class="property-value">
+            <span class="notion-tag tag-blue">Python Backend</span>
+            <span class="notion-tag tag-purple">Agentic AI Systems</span>
+            <span class="notion-tag tag-orange">FastAPI</span>
+          </div>
+        </div>
+
+        <div class="property-row">
+          <div class="property-name"><span>🎓</span> Education</div>
+          <div class="property-value">
+            <span class="notion-tag tag-gray">Saveetha Engineering College &bull; B.E. Computer Science</span>
+          </div>
+        </div>
+
+        <div class="property-row">
+          <div class="property-name"><span>📍</span> Location</div>
+          <div class="property-value">
+            <span class="notion-tag tag-yellow">Chennai, India &bull; Remote / Hybrid</span>
+          </div>
+        </div>
+
+        <div class="property-row">
+          <div class="property-name"><span>✉️</span> Direct Contact</div>
+          <div class="property-value">
+            <a href="mailto:karthick.venkatachalem@gmail.com" style="color: #2383e2; text-decoration: none; font-weight: 500;">
+              karthick.venkatachalem@gmail.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Notion Callout Block -->
+      <div class="notion-callout">
+        <div class="callout-icon">💡</div>
+        <div>
+          <strong>Focus:</strong> Building backend systems, automation tools, and AI-powered workflows.
+        </div>
+      </div>
+
+      <!-- Embedded 3D Voxel Model Widget -->
+      <div class="notion-embed-card">
+        <div class="embed-header">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span>🧊</span>
+            <strong>3D Model Forge &bull; Interactive Voxel Inspector</strong>
+          </div>
+          <div class="embed-controls">
+            <button class="embed-tab-btn active" data-model="train">🚂 Steam Train</button>
+            <button class="embed-tab-btn" data-model="steve">🤖 Steve Voxel</button>
+            <button class="embed-tab-btn" data-model="sword">🗡️ Diamond Sword</button>
+            <button class="embed-tab-btn" data-model="redstone">⚡ Redstone Bot</button>
+          </div>
+        </div>
+
+        <div id="notion-three-canvas"></div>
+
+        <div class="embed-footer">
+          <span>🎮 Drag mouse/touch to rotate 3D model &bull; Scroll to zoom</span>
+          <span id="model-status-pill">Rendering: Steam Locomotive on Rails</span>
+        </div>
+      </div>
+
+      <!-- Section: Featured Projects (Gallery Cards) -->
+      <h2 class="notion-h2">
+        <span>🗺️</span> Featured Projects
+      </h2>
+
+      <div class="notion-gallery-grid">
+        
+        <!-- Project 1 -->
+        <div class="gallery-card">
+          <div>
+            <div class="card-header-row">
+              <span class="card-icon">🤖</span>
+              <span class="card-title">Project Steve</span>
+            </div>
+            <p class="card-desc">
+              Autonomous AI workflow automation engine built with FastAPI and n8n webhooks for orchestrating multi-agent tasks.
             </p>
           </div>
+          <div>
+            <div class="card-tags" style="margin-bottom: 12px;">
+              <span class="notion-tag tag-blue">FastAPI</span>
+              <span class="notion-tag tag-green">n8n</span>
+              <span class="notion-tag tag-purple">Multi-Agent</span>
+            </div>
+            <a href="https://project-steve-ten.vercel.app" target="_blank" rel="noopener" class="notion-btn notion-btn-primary" style="font-size: 11px; width: 100%; justify-content: center;">
+              🚀 Live Demo &rarr;
+            </a>
+            <a href="https://github.com/Gorghs/Project_steve" target="_blank" rel="noopener" class="notion-btn" style="font-size: 11px; width: 100%; justify-content: center; margin-top: 8px;">
+              📂 GitHub Source &rarr;
+            </a>
+          </div>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-2" style="text-align: center;">
-          <img
-            src="./images/karthick.png"
-            alt="Karthick V"
-            style="width: 80px; height: 80px; image-rendering: pixelated;"
-          />
+
+        <!-- Project 2 -->
+        <div class="gallery-card">
+          <div>
+            <div class="card-header-row">
+              <span class="card-icon">🔍</span>
+              <span class="card-title">Sherlock</span>
+            </div>
+            <p class="card-desc">
+              Automated job opportunity crawler and intelligent candidate fit matcher with automated alert dispatches.
+            </p>
+          </div>
+          <div>
+            <div class="card-tags" style="margin-bottom: 12px;">
+              <span class="notion-tag tag-blue">NestJS</span>
+              <span class="notion-tag tag-green">TypeScript</span>
+              <span class="notion-tag tag-purple">GraphQL</span>
+              <span class="notion-tag tag-orange">MCP</span>
+            </div>
+            <a href="https://sherlock-0st2.onrender.com" target="_blank" rel="noopener" class="notion-btn notion-btn-primary" style="font-size: 11px; width: 100%; justify-content: center;">
+              🚀 Live Demo &rarr;
+            </a>
+            <a href="https://github.com/Gorghs/Project_Sherlock" target="_blank" rel="noopener" class="notion-btn" style="font-size: 11px; width: 100%; justify-content: center; margin-top: 8px;">
+              📂 GitHub Source &rarr;
+            </a>
+          </div>
         </div>
+
+        <!-- Project 3 -->
+        <div class="gallery-card">
+          <div>
+            <div class="card-header-row">
+              <span class="card-icon">🌍</span>
+              <span class="card-title">EARTHIFY</span>
+            </div>
+            <p class="card-desc">
+              Scalable environmental dataset ingestion and processing pipeline utilizing asynchronous Python workers.
+            </p>
+          </div>
+          <div>
+            <div class="card-tags" style="margin-bottom: 12px;">
+              <span class="notion-tag tag-blue">Python</span>
+              <span class="notion-tag tag-green">YOLOv8</span>
+              <span class="notion-tag tag-purple">ONNX Runtime</span>
+              <span class="notion-tag tag-orange">Flask</span>
+            </div>
+            <a href="https://earthify-waste-classifier.onrender.com" target="_blank" rel="noopener" class="notion-btn notion-btn-primary" style="font-size: 11px; width: 100%; justify-content: center;">
+              🚀 Live Demo &rarr;
+            </a>
+            <a href="https://github.com/Gorghs/EARTHIFY" target="_blank" rel="noopener" class="notion-btn" style="font-size: 11px; width: 100%; justify-content: center; margin-top: 8px;">
+              📂 GitHub Source &rarr;
+            </a>
+          </div>
+        </div>
+
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 col-sm-12 col-xs-12">
-          <div class="nes-container with-title" style="margin-bottom: 10px">
-            <h3 class="title">Who Am I ?</h3>
+
+      <!-- Section: Technical Skills Table -->
+      <h2 class="notion-h2">
+        <span>⚡</span> Technical Skills &amp; Proficiency
+      </h2>
+
+      <table class="notion-table">
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Technologies &amp; Frameworks</th>
+            <th>Experience Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Languages</strong></td>
+            <td>Python (Expert), Java, C, JavaScript, SQL, Bash</td>
+            <td><span class="notion-tag tag-green">Proficient (95%)</span></td>
+          </tr>
+          <tr>
+            <td><strong>Backend &amp; APIs</strong></td>
+            <td>FastAPI, Flask, Node.js, Express.js, AsyncIO, RESTful APIs</td>
+            <td><span class="notion-tag tag-blue">Advanced (90%)</span></td>
+          </tr>
+          <tr>
+            <td><strong>AI &amp; Automation</strong></td>
+            <td>Agentic AI, LLMs, n8n Workflow Automation, Web Scraping</td>
+            <td><span class="notion-tag tag-purple">Specialist (90%)</span></td>
+          </tr>
+          <tr>
+            <td><strong>Databases</strong></td>
+            <td>PostgreSQL, Supabase, MongoDB, Schema Indexing &amp; Optimization</td>
+            <td><span class="notion-tag tag-orange">Strong (85%)</span></td>
+          </tr>
+          <tr>
+            <td><strong>DevOps &amp; Tools</strong></td>
+            <td>Docker, Linux/CLI, Git, CI/CD, Three.js, Next.js</td>
+            <td><span class="notion-tag tag-gray">Experienced (85%)</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Section: Work Experience -->
+      <h2 class="notion-h2">
+        <span>💼</span> Work Experience
+      </h2>
+
+      <div class="notion-list-view">
+        
+        <div class="notion-list-item">
+          <div class="list-item-header">
             <div>
-              <div class="lists">
-                <ul class="nes-list" style="margin-bottom: 0">
-                  <li><i class="nes-icon star"></i> Python Developer</li>
-                  <li><i class="nes-icon trophy"></i> Code Crusade Winner</li>
-                  <li><i class="nes-icon like"></i> Automation Enthusiast</li>
-                </ul>
-              </div>
+              <div class="item-role">SDE Intern</div>
+              <div class="item-company"><a href="https://ankor.in" target="_blank" rel="noopener" style="color: #2383e2; text-decoration: none;">Ankor</a> &bull; Chennai, India</div>
+            </div>
+            <div class="item-date">
+              <span class="notion-tag tag-blue">Jul 2026 – Present</span>
             </div>
           </div>
-          <div class="nes-container with-title" style="margin-bottom: 10px">
-            <h3 class="title">Education</h3>
-            <div style="font-size: 80%; line-height: 1.6;">
-              <span class="nes-text is-success" style="font-weight: bold;">GPA: 8.0</span><br />
-              <strong>B.E. Computer Science</strong><br />
-              <a href="https://saveetha.ac.in/" target="_blank" class="nes-text is-primary">Saveetha Eng. College</a>
-            </div>
-          </div>
-          <div class="nes-container with-title" style="margin-bottom: 10px">
-            <h3 class="title">Connect with me</h3>
+          <ul class="item-bullets">
+            <li>Working on backend development and automation tasks.</li>
+          </ul>
+        </div>
+
+        <div class="notion-list-item">
+          <div class="list-item-header">
             <div>
-              <a
-                href="https://www.linkedin.com/in/karthickv4"
-                target="_blank"
-                ><i class="nes-icon linkedin"></i
-              ></a>
-              <a href="https://github.com/Gorghs" target="_blank"
-                ><i class="nes-icon github"></i
-              ></a>
-              <a href="mailto:karthick.venkatachalem@gmail.com" target="_blank"
-                ><i class="nes-icon gmail"></i
-              ></a>
+              <div class="item-role">Python &amp; Automation Developer (Freelance)</div>
+              <div class="item-company">Fiverr &bull; Remote</div>
+            </div>
+            <div class="item-date">
+              <span class="notion-tag tag-green">Apr 2022 &ndash; May 2023</span>
             </div>
           </div>
-          <div class="nes-container with-title" style="margin-bottom: 10px">
-            <h3 class="title">Projects</h3>
-            <div class="row">
-              <div class="col-xs-12" style="margin-bottom: 20px">
-                <div>
-                  <a
-                    href="https://project-steve-ten.vercel.app"
-                    target="_blank"
-                  >
-                    <div class="nes-icon github"></div>
-                    Project Steve — n8n Automation
-                  </a>
-                </div>
-                <div class="nes-badge">
-                  <span class="is-primary">FastAPI</span>
-                </div>
-                <div class="nes-badge">
-                  <span class="is-success">n8n</span>
-                </div>
-                <div class="nes-badge">
-                  <span class="is-warning">Python</span>
-                </div>
-              </div>
-              <div class="col-xs-12" style="margin-bottom: 20px">
-                <div>
-                  <a
-                    href="https://github.com/Gorghs/Sherlock"
-                    target="_blank"
-                  >
-                    <div class="nes-icon github"></div>
-                    Sherlock — Job Search Platform
-                  </a>
-                </div>
-                <div class="nes-badge">
-                  <span class="is-warning">Python</span>
-                </div>
-                <div class="nes-badge">
-                  <span class="is-error">Automation</span>
-                </div>
-                <div class="nes-badge">
-                  <span class="is-success">Git</span>
-                </div>
-              </div>
-              <div class="col-xs-12" style="margin-bottom: 10px">
-                <div>
-                  <a
-                    href="https://github.com/Gorghs/EARTHIFY"
-                    target="_blank"
-                  >
-                    <div class="nes-icon github"></div>
-                    Eartify — Data Processing
-                  </a>
-                </div>
-                <div class="nes-badge">
-                  <span class="is-warning">Python</span>
-                </div>
-                <div class="nes-badge">
-                  <span class="is-success">Pipelines</span>
-                </div>
-                <div class="nes-badge">
-                  <span class="is-primary">Express.js</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nes-container with-title" style="margin-bottom: 10px">
-            <h3 class="title">Certifications</h3>
-            <div class="lists">
-              <ul class="nes-list is-circle" style="margin-bottom: 0; font-size: 80%;">
-                <li>Python Certification — Python Institute / CS50P (in progress)</li>
-                <li>Introduction to MongoDB — MongoDB</li>
-                <li>Applied AI with Python — Microsoft</li>
-              </ul>
-            </div>
-          </div>
+          <ul class="item-bullets">
+            <li>Built automated Python scripts for workflow orchestration, data scraping, and task optimization.</li>
+            <li>Delivered client solutions on tight deadlines with comprehensive technical documentation.</li>
+          </ul>
         </div>
-        <div class="col-md-7 col-sm-12 col-xs-12">
-          <div
-            class="nes-container with-title"
-            style="margin-bottom: 20px; margin-top: 2px"
-          >
-            <h3 class="title">Core Skills</h3>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">Python</div>
-              <div class="col-xs-7">
-                <progress
-                  class="nes-progress progress is-success"
-                  value="9"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">Java & C</div>
-              <div class="col-xs-7">
-                <progress
-                  class="nes-progress progress is-success"
-                  value="7.5"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">JS & Node</div>
-              <div
-                class="col-xs-7"
-                style="transition: width 1s ease-in"
-              >
-                <progress
-                  class="nes-progress progress is-success"
-                  value="8"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">Backend</div>
-              <div class="col-xs-7">
-                <progress
-                  class="nes-progress progress is-success"
-                  value="8.5"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">AI & Agents</div>
-              <div
-                class="col-xs-7"
-                style="transition: width 1s ease-in"
-              >
-                <progress
-                  class="nes-progress progress is-success"
-                  value="8"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-          </div>
-          <div class="nes-container with-title" style="margin-bottom: 20px">
-            <h3 class="title">Other Tools and Frameworks</h3>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">Postgres/SQL</div>
-              <div class="col-xs-7">
-                <progress
-                  class="nes-progress progress is-success"
-                  value="8"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">Supabase</div>
-              <div class="col-xs-7">
-                <progress
-                  class="nes-progress progress is-success"
-                  value="8"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">Docker/Bash</div>
-              <div class="col-xs-7">
-                <progress
-                  class="nes-progress progress is-success"
-                  value="7.5"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">Neovim</div>
-              <div class="col-xs-7">
-                <progress
-                  class="nes-progress progress is-success"
-                  value="7"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-            <div class="row" style="align-items: center; margin-bottom: 5px;">
-              <div class="col-xs-5">OpenCV</div>
-              <div class="col-xs-7">
-                <progress
-                  class="nes-progress progress is-success"
-                  value="6.5"
-                  max="100"
-                ></progress>
-              </div>
-            </div>
-          </div>
-          <div class="nes-container with-title" style="margin-bottom: 20px">
-            <h3 class="title"><i class="nes-icon star"></i> Work Experience</h3>
-            <div class="row" style="margin-bottom: 20px; align-items: flex-start;">
-              <div class="col-xs-2" style="display: flex; justify-content: center; padding-top: 5px;">
-                <img
-                  src="./images/nsk.png"
-                  alt="NSK Technologies"
-                  style="width: 100%; max-width: 64px; height: auto; object-fit: contain;"
-                />
-              </div>
-              <div class="col-xs-10" style="padding-left: 10px;">
-                <h4 style="font-weight: bold; font-size: 80%; margin-bottom: 4px;">NSK Technologies, Chennai</h4>
-                <p style="color: #888; font-size: 80%; margin-bottom: 6px;">Intern (Jan 2025 – Feb 2025)</p>
-                <ul class="nes-list is-disc" style="font-size: 80%; margin-bottom: 0; padding-left: 15px;">
-                  <li>Developed backend Python services using structured design</li>
-                  <li>Optimized SQL queries and worked with relational databases</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row" style="align-items: flex-start;">
-              <div class="col-xs-2" style="display: flex; justify-content: center; padding-top: 5px;">
-                <img
-                  src="./images/fiverr.png"
-                  alt="Fiverr"
-                  style="width: 100%; max-width: 64px; height: auto; object-fit: contain;"
-                />
-              </div>
-              <div class="col-xs-10" style="padding-left: 10px;">
-                <h4 style="font-weight: bold; font-size: 80%; margin-bottom: 4px;">Fiverr (Freelancer)</h4>
-                <p style="color: #888; font-size: 80%; margin-bottom: 6px;">Virtual Assistant (Apr 2022 – May 2023)</p>
-                <ul class="nes-list is-disc" style="font-size: 80%; margin-bottom: 0; padding-left: 15px;">
-                  <li>Built Python automation scripts for data & workflow tasks</li>
-                  <li>Handled client requirements and documentation</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
-    </div>
-    <div class="container" style="margin-top: 50px; font-size: 60%">
-      <div class="row">
-        <div class="col-xs-12" style="text-align: center; color: #ccc">
-          "First, solve the problem. Then, write the code." - Karthick V &copy; 2026
+
+      <!-- Section: Certifications & Honors (Notion Toggles) -->
+      <h2 class="notion-h2">
+        <span>🏆</span> Honors &amp; Certifications
+      </h2>
+
+      <details class="notion-toggle" open>
+        <summary>🥇 Code Crusade Hackathon Winner</summary>
+        <div class="toggle-content">
+          Awarded 1st place in Code Crusade competitive coding and software engineering hackathon.
         </div>
-      </div>
-    </div>
+      </details>
+
+      <details class="notion-toggle" open>
+        <summary>📜 Python Institute &amp; CS50P Certification</summary>
+        <div class="toggle-content">
+          Comprehensive certification covering data structures, object-oriented design, and algorithms in Python.
+        </div>
+      </details>
+
+      <details class="notion-toggle" open>
+        <summary>📜 Microsoft &bull; Applied AI with Python</summary>
+        <div class="toggle-content">
+          Practical application of machine learning APIs, cognitive services, and AI pipeline orchestration.
+        </div>
+      </details>
+
+      <details class="notion-toggle">
+        <summary>📜 MongoDB University &bull; Introduction to MongoDB</summary>
+        <div class="toggle-content">
+          Document database architecture, indexing strategies, and aggregation pipelines.
+        </div>
+      </details>
+
+      <!-- Footer -->
+      <footer class="notion-footer">
+        <div>
+          &copy; 2026 Karthick V (Gorghs). Built with Notion-inspired minimalism &amp; Three.js 3D Voxel engine.
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <a href="https://github.com/Gorghs" target="_blank" rel="noopener" style="color: var(--notion-text-light); text-decoration: none;">GitHub</a>
+          <a href="https://www.linkedin.com/in/karthickv4" target="_blank" rel="noopener" style="color: var(--notion-text-light); text-decoration: none;">LinkedIn</a>
+          <a href="mailto:karthick.venkatachalem@gmail.com" style="color: var(--notion-text-light); text-decoration: none;">Email</a>
+        </div>
+      </footer>
+
+    </main>
 
     <script src="main.js"></script>
   </body>
 </html>
+
+
+

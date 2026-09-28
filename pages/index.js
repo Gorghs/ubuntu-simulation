@@ -21,23 +21,19 @@ function App() {
   return (
     <>
       <Meta />
-      <h1 style={hiddenSeoStyle}>Karthick V Portfolio | Ubuntu Simulation | Minecraft Styled Portfolio</h1>
+      <h1 style={hiddenSeoStyle}>Karthick V — Software Development Engineer | Portfolio</h1>
       <main style={hiddenSeoStyle}>
         <h2>Karthick V Personal Developer Portfolio</h2>
         <p>
-          Welcome to the official Karthick V Portfolio (Gorghs). This is an interactive web-based Ubuntu simulation and Minecraft styled portfolio showcasing software engineering, Python systems development, workflow automation, and agentic AI.
+          Welcome to the official Karthick V Portfolio (Gorghs). This is an interactive portfolio showcasing software engineering, Python backend development, workflow automation, agentic AI systems, and browser extensions.
         </p>
-        <h2>Interactive Ubuntu Simulation &amp; OS Environment</h2>
+        <h2>Featured Projects</h2>
         <p>
-          This website simulates a functional Ubuntu Linux desktop operating system interface. Visitors can open applications such as a fully integrated Terminal with custom CLI commands, a VS Code iframe, Spotify music player, Settings panel, and contact forms. It provides a unique interactive simulation of the Ubuntu OS (also known as a ubutu simulation).
+          Sherlock — A job aggregation engine searching multiple sources with API, CLI, GraphQL, and MCP integrations. EARTHIFY — YOLO-based waste classification with live camera detection. Project Steve — FastAPI workflow automation with n8n integration.
         </p>
-        <h2>Minecraft Styled Portfolio Themes &amp; Design</h2>
+        <h2>Browser Extensions</h2>
         <p>
-          Experience a premium Minecraft styled portfolio integrating custom Minecraft game graphics, custom-made pixel-art icons, and a scroll-driven Droste-effect zoom animation entering a dark cabin doorway.
-        </p>
-        <h2>Python and Agentic AI Systems Developer</h2>
-        <p>
-          Karthick V is an SDE specializing in building Python backend servers, API databases, and agentic AI systems utilizing LLMs and structured workflow pipelines.
+          Inspect Locker — Firefox extension for element inspection. DraftBlaster — Content drafting tool. Water Reminder — Offline hydration reminder for Chromium browsers.
         </p>
       </main>
       <Ubuntu />

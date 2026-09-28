@@ -97,7 +97,7 @@ const apps = [
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://github.com/gorghs/ubuntu-simulation",
+        url: "https://github.com/Gorghs/arch-simulation",
         screen: () => {},
     },
 ]

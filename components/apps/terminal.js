@@ -16,7 +16,7 @@ export class Terminal extends Component {
             "Saveetha-Engineering-College": ["Sem-1", "Sem-2", "Sem-3", "Sem-4", "Sem-5", "Sem-6"],
             books: ["Eric-Jorgenson_The-Almanack-of-Naval-Ravikant.pdf", "Elon Musk: How the Billionaire CEO of SpaceX.pdf", "The $100 Startup_CHRIS_GUILLEBEAU.pdf", "The_Magic_of_Thinking_Big.pdf"],
             skills: ["Python", "Java", "JavaScript", "C", "Node.js", "Express.js", "Flask", "FastAPI", "PostgreSQL", "SQL", "Firebase", "Supabase", "Git", "Docker", "Neovim", "Shell-Scripting", "Ollama"],
-            projects: ["Project-Steve", "Sherlock", "Eartify"],
+            projects: ["Project_Steve", "Sherlock", "EARTHIFY"],
             interests: ["Backend-Development", "Agentic-AI-Systems", "Workflow-Automation"],
             languages: ["Python", "Java", "JavaScript", "C"],
         };
